@@ -1,7 +1,4 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.3.5"
-  },
   "scripts": {
     "b-h": "npx tailwindcss -i src/input.css -o Restaurant-DB/assets/styles/home.css --watch",
     "b-m": "npx tailwindcss -i src/input.css -o Restaurant-DB/assets/styles/menu.css --watch",
