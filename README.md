@@ -2,4 +2,4 @@
 
 College group projects
 
-Restaurant website live here: http://sarfaraz.is-a.dev/CodeHive/Restaurant-DB
+Restaurant website live [Restaurant DB](http://sarfaraz.is-a.dev/CodeHive/Restaurant-DB)
