@@ -20,7 +20,13 @@ const dadaBoudi = {
        price: 280,
        image: "https://example.com/images/mutton-seekh-kebab.jpg",
        description: "Minced mutton delicately spiced and skewered, cooked to a juicy and tender perfection in a tandoor oven."
-     }
+     },
+     {
+      name: "Chicken Lollipop",
+      price: 180,
+      image: "https://example.com/images/chicken lollipop.jpg",
+      description: "Minced mutton delicately spiced and skewered, cooked to a juicy and tender perfection in a tandoor oven."
+    }
    ],
    mainMenu:[
      {
@@ -42,9 +48,9 @@ const dadaBoudi = {
        description: "Creamy and buttery black lentils cooked with kidney beans, tempered with ginger, garlic, and aromatic spices."
      },
      {
-       name: "Sahi Paneer",
+       name: "Palak Paneer",
        price: 290,
-       image: "https://example.com/images/sahi-paneer.jpg",
+       image: "https://example.com/images/palak-paneer.jpg",
        description: "Cottage cheese cubes stuffed with paneer and nuts, deep-fried until golden brown, and served in a rich and creamy cashew-based gravy."
      }
    ],
