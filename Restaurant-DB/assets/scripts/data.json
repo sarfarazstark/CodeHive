@@ -50,22 +50,10 @@
    ],
    "drinks": [
       {
-         "name": "Aam Panna",
-         "price": 100,
-         "image": "https://example.com/images/aam-panna.jpg",
-         "description": "A refreshing drink made with raw mango pulp, sweetened with jaggery and seasoned with cumin powder."
-      },
-      {
          "name": "Lassi",
          "price": 90,
          "image": "https://example.com/images/lassi.jpg",
          "description": "A traditional yogurt-based drink blended with water, spices, and sometimes fruits."
-      },
-      {
-         "name": "Masala Chai",
-         "price": 70,
-         "image": "https://example.com/images/masala-chai.jpg",
-         "description": "A fragrant and spiced tea made with black tea, milk, ginger, cardamom, and cloves."
       },
       {
          "name": "Lemon Soda",
@@ -80,12 +68,6 @@
          "description": "A popular Pakistani drink made with rose syrup, water, and milk."
       },
       {
-         "name": "Shikanji",
-         "price": 70,
-         "image": "https://example.com/images/shikanji.jpg",
-         "description": "A refreshing Indian drink made with lemon juice, water, sugar, and black salt."
-      },
-      {
          "name": "Fresh Lime Soda",
          "price": 60,
          "image": "https://example.com/images/fresh-lime-soda.jpg",
@@ -96,12 +78,6 @@
          "price": 120,
          "image": "https://example.com/images/mango-shake.jpg",
          "description": "A creamy and flavorful milkshake made with fresh mangoes, milk, and sugar."
-      },
-      {
-         "name": "Rose Milk",
-         "price": 90,
-         "image": "https://example.com/images/rose-milk.jpg",
-         "description": "A refreshing and delicate drink made with rose syrup, milk, and sometimes ice."
       }
    ],
    "special": [
@@ -149,27 +125,5 @@
          "image": "https://example.com/images/kheer.jpg",
          "description": "Rice pudding made with milk, rice, sugar, and a variety of nuts, cooked to a creamy and comforting perfection."
       }
-   ],
-   "openingHours": {
-      "mon": {
-         "open": 12,
-         "close": 22.30
-      },
-      "tue": {
-         "open": 12,
-         "close": 22.30
-      },
-      "thu": {
-         "open": 12,
-         "close": 22.30
-      },
-      "sat": {
-         "open": 12,
-         "close": 22.30
-      },
-      "sun": {
-         "open": 12,
-         "close": 22.30
-      }
-   }
+   ]
 }

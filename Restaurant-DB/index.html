@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dada Boudi</title>
+    <link rel="shortcut icon" href="assets/images/db-logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="flex row justify-center items-center h-screen">
-    <h1 class="text-3xl font-bold text-red-700 hover:text-6xl transition-all cursor-default">
-        DADA BOUDI
-      </h1>
+<body class="bg-wheat">
+  <nav class="flex justify-between items-center px-4 py-2">
+    <img src="assets/images/db-logo.jpg" alt="Dada Boudi Logo" class="w-10 h-10 rounded-full">
+    <ul class="hidden gap-4">
+      <li class="text-olive">Home</li>
+      <li>Menu</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li><button>Book a Table</button></li>
+    </ul>
+    <button class="text-2xl text-moss-green"><i class="fas fa-bars"></i></button>
+  </nav>
+
+
+<script>
+    let nav = true;
+    const navBar = document.querySelector('.nav-btn')
+    const navToggle = function(){
+      if(nav){
+        navBar.classList.remove('hidden');
+        nav = false;
+      } else {
+        navBar.classList.add('hidden');
+        nav = true;
+      }
+    }
+</script>
 </body>
 </html>
