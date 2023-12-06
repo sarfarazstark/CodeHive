@@ -1,39 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dada Boudi</title>
-    <link rel="shortcut icon" href="assets/images/db-logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="assets/styles/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dada Boudi</title>
+  <link rel="shortcut icon" href="assets/images/db-logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-wheat">
-  <nav class="flex justify-between items-center px-4 py-2">
-    <img src="assets/images/db-logo.jpg" alt="Dada Boudi Logo" class="w-10 h-10 rounded-full">
-    <ul class="hidden gap-4">
-      <li class="text-olive">Home</li>
-      <li>Menu</li>
-      <li>About</li>
-      <li>Contact</li>
-      <li><button>Book a Table</button></li>
+
+<body class="bg-wheat font-kulim">
+  <nav class="flex relative justify-between items-center px-6 h-[15vh]">
+    <h1 class="font-bold text-moss-green text-3xl">Dada boudi</h1>
+    <ul id="nav-bar"
+      class="hidden z-40 bg-transparent backdrop-blur-xl flex-col gap-6 md:flex-row  fixed left-0 text-center top-12 w-[90%] text-2xl text-moss-green border-b-2 border-moss-green p-6 m-4 rounded-md">
+      <li><a href="#">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="text-2xl text-moss-green"><i class="fas fa-bars"></i></button>
+    <button class="text-2xl text-moss-green" onclick="toggleMenu()"><i data-lucide="menu"></i></button>
   </nav>
-
-
-<script>
-    let nav = true;
-    const navBar = document.querySelector('.nav-btn')
-    const navToggle = function(){
-      if(nav){
-        navBar.classList.remove('hidden');
-        nav = false;
-      } else {
-        navBar.classList.add('hidden');
-        nav = true;
-      }
-    }
-</script>
-<script src="./assets/scripts/script.js"></script>
+  <main class="h-[85vh] backdrop-blur-xl flex flex-col justify-evenly items-center gap-8">
+    <div
+      class="bg-[url('../../assets/images/blob-for-hero.png')] bg-cover bg-no-repeat bg-center w-11/12 h-80 relative flex flex-wrap content-end justify-center items-center">
+      <img src="assets/images/smoke.png" alt="smoke" class="absolute top-0">
+      <img src="assets/images/biryani.png" alt="chicken biryani image" class="w-4/5">
+    </div>
+    <p class="w-4/5 text-center text-moss-green">Indulge in the authentic flavors of Mughlai biryani and kebabs, local
+      favorites that define our tradition. our restaurant invites you to book a table today and experience the essence
+      where tradition meets taste!</p>
+    <a href="#" class="px-10 py-3 bg-moss-green text-wheat rounded-md w-4/5 text-center text-lg mb-2">Book A Table</a>
+  </main>
+  <section class="h-screen py-4 px-4 flex flex-col justify-between relative">
+    <h1 id="menu" class="w-full text-center text-4xl font-bold text-moss-green mt-4">MENU</h1>
+    <img src="assets/images/fresh-lemon-cocktail-drink-glass-on-transparent-background-png.webp" alt="fresh-lemon-cocktail-drink-glass" class="drop-shadow-xl mt-2">
+    <div class="px-2">
+      <ul class="menu-item w-full grid grid-cols-2 gap-1">
+        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">STARTER<i data-lucide="expand" class="ml-2"></i></li>
+        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">MAIN COURSE<i data-lucide="expand" class="ml-2"></i></li>
+        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">DESSERT<i data-lucide="expand" class="ml-2"></i></li>
+        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">DRINKS<i data-lucide="expand" class="ml-2"></i></li>
+        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat col-span-2  text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">SPECIAL<i data-lucide="expand" class="ml-2"></i></li>
+      </ul>
+    </div>
+    <div class="pop hidden backdrop-blur-md h-screen w-full p-4 fixed top-0">
+      <div class="bg-white w-full h-full rounded-lg"></div>
+    </div>
+  </section>
+  <script type="module" src="./assets/scripts/script.js"></script>
 </body>
+
 </html>
