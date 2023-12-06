@@ -13,6 +13,9 @@
 </head>
 
 <body class="bg-wheat font-kulim">
+
+  <!-- Navbar Section -->
+
   <nav class="flex relative justify-between items-center px-6 h-[15vh]">
     <h1 class="font-bold text-moss-green text-3xl">Dada boudi</h1>
     <ul id="nav-bar"
@@ -22,8 +25,11 @@
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="text-2xl text-moss-green" onclick="toggleMenu()"><i data-lucide="menu"></i></button>
+    <button class="nav-btn text-2xl text-moss-green" onclick="toggleMenu(this)"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
   </nav>
+
+  <!-- Hero Section -->
+
   <main class="h-[85vh] backdrop-blur-xl flex flex-col justify-evenly items-center gap-8">
     <div
       class="bg-[url('../../assets/images/blob-for-hero.png')] bg-cover bg-no-repeat bg-center w-11/12 h-80 relative flex flex-wrap content-end justify-center items-center">
@@ -35,22 +41,182 @@
       where tradition meets taste!</p>
     <a href="#" class="px-10 py-3 bg-moss-green text-wheat rounded-md w-4/5 text-center text-lg mb-2">Book A Table</a>
   </main>
-  <section class="h-screen py-4 px-4 flex flex-col justify-between relative">
-    <h1 id="menu" class="w-full text-center text-4xl font-bold text-moss-green mt-4">MENU</h1>
-    <img src="assets/images/fresh-lemon-cocktail-drink-glass-on-transparent-background-png.webp" alt="fresh-lemon-cocktail-drink-glass" class="drop-shadow-xl mt-2">
-    <div class="px-2">
-      <ul class="menu-item w-full grid grid-cols-2 gap-1">
-        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">STARTER<i data-lucide="expand" class="ml-2"></i></li>
-        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">MAIN COURSE<i data-lucide="expand" class="ml-2"></i></li>
-        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">DESSERT<i data-lucide="expand" class="ml-2"></i></li>
-        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">DRINKS<i data-lucide="expand" class="ml-2"></i></li>
-        <li class="bg-moss-green border-2 flex justify-center items-center border-wheat col-span-2  text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950">SPECIAL<i data-lucide="expand" class="ml-2"></i></li>
-      </ul>
-    </div>
-    <div class="pop hidden backdrop-blur-md h-screen w-full p-4 fixed top-0">
-      <div class="bg-white w-full h-full rounded-lg"></div>
+
+  <!-- Menu Section -->
+
+  <section id="menu" class="h-screen py-4 px-4 flex flex-col justify-between relative">
+    <div class="h-full flex flex-col justify-between">
+      <h1 class="w-full text-center text-4xl font-bold text-moss-green mt-8">MENU</h1>
+      <img src="assets/images/fresh-lemon-cocktail-drink-glass-on-transparent-background-png.webp"
+        alt="fresh-lemon-cocktail-drink-glass" class="drop-shadow-xl mt-2">
+      <div class="px-2">
+        <ul class="menu-item w-full grid grid-cols-2 gap-1">
+          <li
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            data-name="starter">STARTER<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="lucide lucide-expand">
+              <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8" />
+              <path d="M3 16.2V21m0 0h4.8M3 21l6-6" />
+              <path d="M21 7.8V3m0 0h-4.8M21 3l-6 6" />
+              <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
+            </svg></li>
+          <li
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            data-name="main">
+            MAIN COURSE<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-expand">
+              <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8" />
+              <path d="M3 16.2V21m0 0h4.8M3 21l6-6" />
+              <path d="M21 7.8V3m0 0h-4.8M21 3l-6 6" />
+              <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
+            </svg></li>
+          <li
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            data-name="dessert">
+            DESSERT<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-expand">
+              <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8" />
+              <path d="M3 16.2V21m0 0h4.8M3 21l6-6" />
+              <path d="M21 7.8V3m0 0h-4.8M21 3l-6 6" />
+              <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
+            </svg></li>
+          <li
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            data-name="drinks">
+            DRINKS<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-expand">
+              <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8" />
+              <path d="M3 16.2V21m0 0h4.8M3 21l6-6" />
+              <path d="M21 7.8V3m0 0h-4.8M21 3l-6 6" />
+              <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
+            </svg></li>
+          <li
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat col-span-2  text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            data-name="special">
+            SPECIAL<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-expand">
+              <path d="m21 21-6-6m6 6v-4.8m0 4.8h-4.8" />
+              <path d="M3 16.2V21m0 0h4.8M3 21l6-6" />
+              <path d="M21 7.8V3m0 0h-4.8M21 3l-6 6" />
+              <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
+            </svg></li>
+        </ul>
+      </div>
     </div>
   </section>
+  <!-- Popup -->
+  <div class="pop hidden fixed backdrop-blur-md h-screen w-full p-4 top-0">
+    <div class="bg-black bg-opacity-50 w-full h-full rounded-lg m-0 p-4 text-wheat">
+      <div class="flex justify-between mb-6">
+        <h2 class="text-2xl uppercase">items</h2>
+        <butter><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+      </div>
+      <div class="flex items-start">
+        <img src="assets/images/butter-chicken.jpg" alt="butter-chicken" class="w-1/4 h-auto rounded-xl mr-2">
+        <div>
+        <h2 class="font-bold text-xl">Butter Chicken</h2>
+        <p class="font-bold text-amber-500">₹250</p>
+        <p class="text-sm opacity-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusamus, consectetur </p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+
+  <section id="about" class="h-screen about">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <h1 class="text-4xl font-bold text-moss-green">ABOUT US</h1>
+      <img src="assets/images/about.png" alt="about" class="w-4/5">
+      <p class="text-center text-moss-green w-4/5 font-bold">
+        Since 1961, Dada Boudi Restaurant has been a culinary cornerstone in Barrackpore, Kolkata, celebrated for its
+        delicious Mughlai cuisine, especially biryani and kebabs. With three outlets, we pride ourselves on offering a
+        family-friendly atmosphere, reasonable prices, and unforgettable dining experiences.
+      </p>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+
+  <section id="contact" class="h-screen contact">
+    <div class="w-full h-full flex flex-col justify-center items-center text-moss-green">
+      <div class="w-4/5 h-full text-center">
+        <h1 class="text-4xl font-bold mt-8">CONTACT US</h1>
+        <div class="text-center mt-10">
+          <h2 class="text-lg font-bold">Booking Request</h2>
+          <a href="tel:+918017099986" class="text-2xl font-bold">+91 80170 99986</a>
+        </div>
+        <div class="text-center mt-4">
+          <p class="font-bold text-xl">Location</p>
+          <p>12/1 Barrackpore S.N. Banerjee Road, Opposite Sukanto Sadan</p>
+        </div>
+        <p class="font-bold mt-4 mb-4">Open: 12.00 am - 10.00pm</p>
+      </div>
+
+      <div class="mt-8">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1320995614897!2d88.3696874!3d22.760478400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89a53d614f491%3A0x99eba74dc399fd57!2sDada%20Boudi%20Restaurant!5e0!3m2!1sen!2sin!4v1701871863504!5m2!1sen!2sin"
+          width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="h-[50vh] bg-slate-800">
+    <div class="w-full h-full text-center flex flex-col justify-evenly items-center text-wheat">
+         <ul>
+          <li>Home</li>
+          <li>Privacy Policy</li>
+          <li>Terms Of Use</li>
+         </ul>
+         <ul class="flex gap-8">
+          <li class="text-blue-600"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li>
+
+          <li class="text-red-600"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></a></li>
+
+          <li class="text-fuchsia-700"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></li>
+         </ul>
+         <p>Coded By <a href="https://github.com/sarfarazstark/CodeHive" class="">CodeHive</a></p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    let menuToggle = false;
+    const nav = document.querySelector('#nav-bar');
+    const navList = nav.querySelectorAll('li');
+    const icon = document.querySelector('.nav-btn');
+    // console.log(navList);
+    const toggleMenu = function (thisEl) {
+      console.log(icon);
+      if (menuToggle) {
+        icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>`;
+        nav.classList.remove('flex');
+        nav.classList.add('hidden');
+        menuToggle = false
+      } else {
+        icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`
+        nav.classList.remove('hidden');
+        nav.classList.add('flex');
+        nav.classList.add('transition-all');
+        menuToggle = true;
+      }
+    }
+    navList.forEach(navEl => {
+      navEl.addEventListener('click', function () {
+          icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>`;
+          nav.classList.remove('flex');
+          nav.classList.add('hidden');
+          menuToggle = false;
+      })
+    });
+    lucide.createIcons();
+  </script>
   <script type="module" src="./assets/scripts/script.js"></script>
 </body>
 

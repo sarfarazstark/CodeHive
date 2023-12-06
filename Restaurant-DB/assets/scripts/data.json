@@ -2,7 +2,7 @@
   "restaurantName": "Dada Boudi",
   "location": "12/1 Barrackpore S.N. Banerjee Road, Opposite Sukanto Sadan",
   "about": "Welcome to Dada Boudi Restaurant, your go-to for authentic Mughlai flavors in Barrackpore, Kolkata! Indulge in our aromatic biryani and mouthwatering kebabs that have become local favorites. Located just across from Sukanto Sadan, our family-friendly spot offers delightful dining experiences. Book a table today at Dada Boudi, where tradition meets taste!",
-  "starterMenu": [
+  "starter": [
     {
       "name": "Assorted Kebabs",
       "price": 250,
@@ -22,7 +22,7 @@
       "description": "Minced mutton delicately spiced and skewered, cooked to a juicy and tender perfection in a tandoor oven."
     }
   ],
-  "mainMenu": [
+  "main": [
     {
       "name": "Mutton Biryani",
       "price": 350,
