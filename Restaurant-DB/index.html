@@ -25,7 +25,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="nav-btn text-2xl text-moss-green" onclick="toggleMenu(this)"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+    <button class="nav-btn text-2xl text-moss-green" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
   </nav>
 
   <!-- Hero Section -->
@@ -34,7 +34,7 @@
     <div
       class="bg-[url('../../assets/images/blob-for-hero.png')] bg-cover bg-no-repeat bg-center w-11/12 h-80 relative flex flex-wrap content-end justify-center items-center">
       <img src="assets/images/smoke.png" alt="smoke" class="absolute top-0">
-      <img src="assets/images/biryani.png" alt="chicken biryani image" class="w-4/5">
+      <img src="assets/images/biryani.png" alt="chicken biryani image" class="w-3/5">
     </div>
     <p class="w-4/5 text-center text-moss-green">Indulge in the authentic flavors of Mughlai biryani and kebabs, local
       favorites that define our tradition. our restaurant invites you to book a table today and experience the essence
@@ -45,11 +45,11 @@
   <!-- Menu Section -->
 
   <section id="menu" class="h-screen py-4 px-4 flex flex-col justify-between relative">
-    <div class="h-full flex flex-col justify-between">
+    <div class="h-full flex flex-col justify-between items-center">
       <h1 class="w-full text-center text-4xl font-bold text-moss-green mt-8">MENU</h1>
-      <img src="assets/images/fresh-lemon-cocktail-drink-glass-on-transparent-background-png.webp"
-        alt="fresh-lemon-cocktail-drink-glass" class="drop-shadow-xl mt-2">
-      <div class="px-2">
+      <img src="assets/images/inside.jpg"
+        alt="fresh-lemon-cocktail-drink-glass" class="drop-shadow-xl mt-2 rounded-full object-cover w-[200px] h-[200px]">
+      <div class="w-full">
         <ul class="menu-item w-full grid grid-cols-2 gap-1">
           <li
             class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
@@ -110,7 +110,7 @@
     </div>
   </section>
   <!-- Popup -->
-  <div class="pop hidden fixed backdrop-blur-md h-screen w-full p-4 top-0">
+  <div class="pop fixed backdrop-blur-md h-screen w-full p-4 top-0">
     <div class="bg-black bg-opacity-50 w-full h-full rounded-lg m-0 p-4 text-wheat">
       <div class="flex justify-between mb-6">
         <h2 class="text-2xl uppercase">items</h2>
@@ -181,7 +181,7 @@
 
           <li class="text-fuchsia-700"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></li>
          </ul>
-         <p>Coded By <a href="https://github.com/sarfarazstark/CodeHive" class="">CodeHive</a></p>
+         <p>Coded By <a href="https://github.com/sarfarazstark/CodeHive" class="font-bold">CodeHive</a></p>
     </div>
   </footer>
 
@@ -192,8 +192,7 @@
     const navList = nav.querySelectorAll('li');
     const icon = document.querySelector('.nav-btn');
     // console.log(navList);
-    const toggleMenu = function (thisEl) {
-      console.log(icon);
+    const toggleMenu = function () {
       if (menuToggle) {
         icon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>`;
         nav.classList.remove('flex');
