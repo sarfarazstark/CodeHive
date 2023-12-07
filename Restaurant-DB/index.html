@@ -20,7 +20,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
 <body class="bg-wheat font-kulim">
@@ -232,12 +231,12 @@
             class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none"
             placeholder="Email" required>
 
-          <input type="text" name="date" id="datePicker"
-            class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none" placeholder="Enter your date"
-            required>
-          <input type="text" name="time" id="timePicker"
-            class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none" placeholder="Enter your time"
-            required>
+          <input type="text" name="date" id="date"
+            class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none"
+            placeholder="Enter date e.g 31/12/2023" required>
+          <input type="text" name="time" id="time"
+            class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none"
+            placeholder="Enter time e.g 24:00" required>
           <div class="w-full">
             <select name="person" id="person"
               class="py-2 px-4 w-full outline-none md:py-3 shadow-inner shadow-black bg-wheat rounded-md md:text-xl"
@@ -360,17 +359,6 @@
     function thankYou() {
       alert('Thank you for booking a table with us. We will contact you soon.')
     }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script>
-    flatpickr("#datePicker", {
-      dateFormat: "d-m-Y",
-    });
-    flatpickr("#timePicker", {
-    enableTime: true,
-    noCalendar: true,
-    dateFormat: "H:i",
-  });
   </script>
 </body>
 
