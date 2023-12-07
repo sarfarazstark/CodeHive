@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "npx tailwindcss -i src/input.css -o assets/styles/style.css --watch"
+  },
+  "dependencies": {
+    "tiny-slider": "^2.9.4"
+  }
+}
