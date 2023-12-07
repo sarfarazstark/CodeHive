@@ -51,7 +51,8 @@
           favorites that define our tradition. our restaurant invites you to book a table today and experience the
           essence
           where tradition meets taste!</p>
-        <a href="#book" class="px-10 py-3 bg-moss-green text-wheat rounded-md w-4/5 text-center text-lg my-6 md:w-full">Book
+        <a href="#book"
+          class="px-10 py-3 bg-moss-green text-wheat rounded-md w-4/5 text-center text-lg my-6 md:w-full">Book
           A Table</a>
       </div>
     </div>
@@ -59,8 +60,7 @@
 
   <!-- Menu Section -->
 
-  <section id="menu"
-    class="h-screen md:p-8 py-4 px-4 flex flex-col justify-evenly items-center relative bg-moss-green">
+  <section id="menu" class="h-screen md:p-8 py-4 px-4 flex flex-col justify-evenly items-center relative bg-moss-green">
     <div
       class="h-full md:grid md:gap-20 md:grid-cols-2 flex flex-col justify-evenly items-center md:max-w-[800px] gap-8">
       <h1 class="w-full md:text-8xl text-center text-4xl font-bold text-wheat mt-8 md:col-span-2">MENU</h1>
@@ -176,14 +176,16 @@
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="lucide lucide-chevron-left">
               <path d="m15 18-6-6 6-6" />
-            </svg></li>
+            </svg>
+          </li>
           <li
             class="next absolute top-1/2 z-10 right-0 md:-right-2 bg-hunyadi-yellow text-moss-green p-2 rounded-full cursor-pointer shadow-md">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="lucide lucide-chevron-right">
               <path d="m9 18 6-6-6-6" />
-            </svg></li>
+            </svg>
+          </li>
         </ul>
         <div class="my-slider flex justify-items-center gap-6"></div>
       </div>
@@ -212,26 +214,24 @@
       <h1 class="text-4xl font-bold text-center text-w my-6 md:text-6xl md:col-span-2">Book a table</h1>
       <img src="assets/images/chicken on plate.png" alt="under dome cover" class="w-40 md:w-96">
       <div class="w-full h-full flex flex-col justify-evenly items-center md:max-w-[800px]">
-        <form action="" class="w-10/12 h-full flex flex-col justify-center items-center gap-2 text-moss-green">
-          <div class="w-full">
-            <input type="text" name="name" id="name"
-              class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md px-4 md:text-xl md:py-6 outline-none" placeholder="Name">
-          </div>
-          <div class="w-full">
-            <input type="email" name="email" id="email"
-              class="w-full h-10 bg-wheat shadow-inner shadow-blackrounded-md md:text-xl md:py-6 px-4 outline-none" placeholder="Email">
-          </div>
-          <div class="w-full">
-            <input type="date" name="date" id="date"
-              class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none">
-          </div>
-          <div class="w-full">
-            <input type="time" name="time" id="time"
-              class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none">
-          </div>
+        <form action="" onsubmit="thankYou()" class="w-10/12 h-full flex flex-col justify-center items-center gap-2 text-moss-green">
+          <input type="text" name="name" id="name"
+            class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md px-4 md:text-xl md:py-6 outline-none"
+            placeholder="Name" required>
+          <input type="email" name="email" id="email"
+            class="w-full h-10 bg-wheat shadow-inner shadow-blackrounded-md md:text-xl md:py-6 px-4 outline-none"
+            placeholder="Email" required>
+
+          <input type="date" name="date" id="date"
+            class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none"
+            required>
+          <input type="time" name="time" id="time"
+            class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none"
+            required>
           <div class="w-full">
             <select name="person" id="person"
-              class="py-2 px-4 w-full outline-none md:py-3 shadow-inner shadow-black bg-wheat rounded-md md:text-xl">
+              class="py-2 px-4 w-full outline-none md:py-3 shadow-inner shadow-black bg-wheat rounded-md md:text-xl"
+              required>
               <option value="0">Select Person</option>
               <option value="1">Person 1</option>
               <option value="2">Person 2</option>
@@ -242,9 +242,7 @@
               <option value="7">Person 7</option>
             </select>
           </div>
-          <div class="w-full">
-            <button class="bg-wheat text-moss-green py-3 w-full rounded-md font-bold">Book Now</button>
-          </div>
+          <button type="submit" class="bg-wheat text-moss-green py-3 w-full rounded-md font-bold">Book Now</button>
         </form>
       </div>
     </div>
@@ -253,8 +251,7 @@
 
   <!-- Contact Section -->
 
-  <section id="contact"
-    class="h-screen contact flex justify-evenly md:justify-center bg-wheat">
+  <section id="contact" class="h-screen contact flex justify-evenly md:justify-center bg-wheat">
     <div class="w-full h-full flex flex-col md:flex-row justify-center items-center text-moss-green md:items-center">
       <div class="w-4/5 md:w-auto h-auto text-center md:p-12 md:flex md:flex-col md:justify-between md:h-[400px]">
         <h1 class="text-4xl font-bold mt-8 md:text-5xl">CONTACT US</h1>
@@ -350,7 +347,9 @@
       pop.classList.remove('flex');
       document.querySelector('body').style.overflow = 'auto';
     };
-
+    function thankYou() {
+      alert('Thank you for booking a table with us. We will contact you soon.')
+    }
   </script>
 </body>
 
