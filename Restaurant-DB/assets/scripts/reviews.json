@@ -1,0 +1,34 @@
+{
+	"reviews": [
+		{
+			"author": "OINDRILA BANIK",
+			"content": "Had a delightful winter dining experience at a rooftop restaurant. Cozy ambiance, standout biriyani, and irresistible fish fry made the meal memorable. Highly recommend for great food and a pleasant setting.",
+			"rating": 5,
+      "img": "female.jpeg"
+		},
+    {
+      "author": "JHUMA DEY",
+      "content": "Very good service and quality also too good i don't know why people always criticize about this biriyani .. taste is soo good and fresh",
+      "rating": 5,
+      "img": "female2.jpeg"
+    },
+    {
+      "author": "Engaging Memory",
+      "content": "Highlight here is the biriyani. Opted for fish fry (2pcs) and chicken biriyani with salad. Both dishes were mouthwatering and delicious. Consider sharing tables on weekends due to the crowd. Fast service, and staff behavior was okay. Overall, a great experience.",
+      "rating": 5,
+      "img": "male.jpeg"
+    },
+    {
+      "author": "Somnath Bhattachariya",
+      "content": "One of the best Biriyani shop in Kolkata ( Barrackpore ),Walking Distance From Barrackpore Railway station jast 2-3 minutes.Biriyani quality is Very good, Taste is Awasome, quantity is ok, service is good, Everything is good.",
+      "rating": 5,
+      "img": "male2.jpeg"
+    },
+    {
+      "author": "Arunesh Dey",
+      "content": "Walking distance from Barrakpore railway station where they serve and also give take away, home delivery goes from this place😊 friendly staffs and on weekdays seats are always available. Take away price for Chicken Biryani is ₹230",
+      "rating": 5,
+      "img": "male3.jpeg"
+    }
+  ]
+}

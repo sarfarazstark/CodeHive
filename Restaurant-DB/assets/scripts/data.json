@@ -6,13 +6,13 @@
     {
       "name": "Assorted Kebabs",
       "price": 250,
-      "image": "assets/images/assorted-kebabs.jpg",
+      "image": "assets/images/assorted-kebabs.jpeg",
       "description": "A selection of succulent tandoori chicken, mutton tikka, and fish tikka, marinated in aromatic spices and grilled to perfection."
     },
     {
       "name": "Crispy Chilli Chicken",
       "price": 220,
-      "image": "assets/images/crispy-chilli-chicken.jpg",
+      "image": "assets/images/crispy-chilli-chicken.jpeg",
       "description": "A spicy and flavorful dish of chicken pieces coated in a crispy batter and tossed in a tangy chili sauce."
     },
     {
@@ -64,13 +64,13 @@
     {
       "name": "Rooh Afza",
       "price": 80,
-      "image": "assets/images/rooh-afza.jpg",
+      "image": "assets/images/roohafza.jpg",
       "description": "A popular Pakistani drink made with rose syrup, water, and milk."
     },
     {
       "name": "Fresh Lime Soda",
       "price": 60,
-      "image": "assets/images/fresh-lime-soda.jpg",
+      "image": "assets/images/lime-soda.jpg",
       "description": "A classic and zesty drink made with fresh lime juice, soda water, and sugar."
     },
     {
@@ -84,7 +84,7 @@
     {
       "name": "Chef's Special Tandoori Platter",
       "price": 450,
-      "image": "assets/images/tandoori-platter.jpg",
+      "image": "assets/images/Chef's Special Tandoori Platter.jpg",
       "description": "A generous platter of assorted tandoori delights, including tandoori chicken, tandoori prawns, tandoori vegetables, and tandoori naan."
     },
     {
