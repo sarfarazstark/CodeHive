@@ -63,9 +63,9 @@ var slider = tns({
   items: 1,
   slideBy: 1,
   autoplay: true,
-  loop: false,
+  loop: true,
   autoplayButtonOutput: false,
-  edgePadding: 10,
+  edgePadding: 40,
   controlsContainer: '#custom-control'
 });
 

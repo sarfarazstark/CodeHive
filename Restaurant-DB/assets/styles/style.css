@@ -1404,6 +1404,14 @@ video {
     width: 30%;
   }
 
+  .md\:w-\[30rem\] {
+    width: 30rem;
+  }
+
+  .md\:w-\[40rem\] {
+    width: 40rem;
+  }
+
   .md\:min-w-\[300px\] {
     min-width: 300px;
   }
