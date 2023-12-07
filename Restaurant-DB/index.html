@@ -14,62 +14,67 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 
-<body class="bg-wheat font-kulim max-w-[400px]">
+<body class="bg-wheat font-kulim">
 
   <main class="h-screen flex flex-col justify-between items-center bg-gradient-to-t from-to-grad to-wheat">
     <!-- Navbar Section -->
 
-    <nav class="flex justify-between items-center p-6 w-full">
+    <nav class="flex justify-between items-center p-6 w-full md:max-w-[800px]">
       <div class="flex justify-between w-full">
         <h1 class="font-bold text-moss-green text-3xl uppercase">Dada boudi</h1>
-        <button class="nav-btn text-2xl text-moss-green" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg"
-            width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+        <button class="md:hidden nav-btn text-2xl text-moss-green" onclick="toggleMenu()"><svg
+            xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-menu">
             <line x1="4" x2="20" y1="12" y2="12" />
             <line x1="4" x2="20" y1="6" y2="6" />
             <line x1="4" x2="20" y1="18" y2="18" />
           </svg></button>
       </div>
       <ul id="nav-bar"
-        class="hidden z-40 bg-transparent backdrop-blur-2xl flex-col gap-6 md:flex-row fixed left-0 text-center top-12 w-[90%] text-2xl text-moss-green border-b-2 border-moss-green p-6 m-4 rounded-md">
-        <li><a href="#" class="underline">Home</a></li>
-        <li><a href="#menu" class="underline">Menu</a></li>
-        <li><a href="#outlets" class="underline">Our Outlets</a></li>
-        <li><a href="#reviews" class="underline">Reviews</a></li>
-        <li><a href="#about" class="underline">About</a></li>
-        <li><a href="#contact" class="underline">Contact</a></li>
+        class="hidden md:flex md:border-none md:text-lg md:static md:m-0 md:p-0 md:w-full z-40 bg-transparent backdrop-blur-2xl flex-col gap-6 md:flex-row fixed left-0 text-center top-12 w-[90%] text-2xl text-moss-green border-b-2 border-moss-green p-6 m-4 rounded-md">
+        <li><a href="#" class="hove:font-bold hover:text-[1.180rem]">Home</a></li>
+        <li><a href="#menu" class="hove:font-bold hover:text-[1.180rem]">Menu</a></li>
+        <li><a href="#outlets" class="hove:font-bold hover:text-[1.180rem]">Outlets</a></li>
+        <li><a href="#reviews" class="hove:font-bold hover:text-[1.180rem]">Reviews</a></li>
+        <li><a href="#about" class="hove:font-bold hover:text-[1.180rem]">About</a></li>
+        <li><a href="#contact" class="hove:font-bold hover:text-[1.180rem]">Contact</a></li>
       </ul>
     </nav>
     <!-- Hero Section -->
-    <div class="w-full h-full flex flex-col justify-center items-center gap-4">
-      <div class="">
-        <img src="assets/images/biryani.png" alt="chicken biryani image" class="w-56">
+    <div class="w-full h-full md:max-w-[800px] flex flex-col justify-center items-center gap-4 md:grid md:grid-cols-2">
+      <img src="assets/images/biryani.png" alt="chicken biryani image" class="w-56 md:w-96">
+      <div class="text-center flex flex-col justify-center items-center">
+        <h1 class="font-extrabold text-3xl text-moss-green mb-3 md:text-4xl">Welcome to <br> Dada Boudi Restaurant</h1>
+        <p class="w-4/5 md:w-full text-center text-moss-green md:text-xl">Indulge in the authentic flavors of Mughlai
+          biryani and kebabs, local
+          favorites that define our tradition. our restaurant invites you to book a table today and experience the
+          essence
+          where tradition meets taste!</p>
+        <a href="#book" class="px-10 py-3 bg-moss-green text-wheat rounded-md w-4/5 text-center text-lg my-6 md:w-full">Book
+          A Table</a>
       </div>
-      <h1 class="font-extrabold text-3xl text-center text-moss-green">Welcome to <br> Dada Boudi Restaurant</h1>
-      <p class="w-4/5 text-center text-moss-green">Indulge in the authentic flavors of Mughlai biryani and kebabs, local
-        favorites that define our tradition. our restaurant invites you to book a table today and experience the essence
-        where tradition meets taste!</p>
-      <a href="#" class="px-10 py-3 bg-moss-green text-wheat rounded-md w-4/5 text-center text-lg mb-6">Book A Table</a>
     </div>
   </main>
 
   <!-- Menu Section -->
 
   <section id="menu"
-    class="h-screen py-4 px-4 flex flex-col justify-evenly relative bg-gradient-to-t from-to-grad to-wheat">
-    <div class="h-full flex flex-col justify-evenly items-center gap-8">
-      <h1 class="w-full text-center text-4xl font-bold text-moss-green mt-8">MENU</h1>
+    class="h-screen md:p-8 py-4 px-4 flex flex-col justify-evenly items-center relative bg-gradient-to-t from-to-grad to-wheat">
+    <div
+      class="h-full md:grid md:gap-20 md:grid-cols-2 flex flex-col justify-evenly items-center md:max-w-[800px] gap-8">
+      <h1 class="w-full md:text-8xl text-center text-4xl font-bold text-moss-green mt-8 md:col-span-2">MENU</h1>
       <div class="relative">
         <p
           class="bg-moss-green w-fit py-1 px-2 text-wheat font-bold rounded-md after:w-4 after:h-4 after:bg-moss-green after:absolute after:top-5 after:-z-[3] after:rotate-45 after:-translate-x-[11px] after:rounded-sm absolute -top-6 left-0 z-[4]">
           Barrackpore Outlet</p>
         <img src="assets/images/inside.jpg" alt="fresh-lemon-cocktail-drink-glass"
-          class="drop-shadow-xl mt-2 rounded-full object-cover w-[250px] h-[250px]">
+          class="drop-shadow-xl mt-2 rounded-full object-cover w-[250px] h-[250px] md:w-full md:h-[300px]">
       </div>
       <div class="w-full">
-        <ul class="menu-item w-full grid grid-cols-2 gap-1">
+        <ul class="menu-item w-full md:flex md:flex-col grid grid-cols-2 gap-1">
           <li
-            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full md:min-w-[300px] md:text-2xl active:bg-green-950 cursor-pointer"
             data-name="starter">STARTER<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" class="lucide lucide-expand">
@@ -79,7 +84,7 @@
               <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
             </svg></li>
           <li
-            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full md:min-w-[300px] md:text-2xl active:bg-green-950 cursor-pointer"
             data-name="main">
             MAIN COURSE<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -90,7 +95,7 @@
               <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
             </svg></li>
           <li
-            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full md:min-w-[300px] md:text-2xl active:bg-green-950 cursor-pointer"
             data-name="dessert">
             DESSERT<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -101,7 +106,7 @@
               <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
             </svg></li>
           <li
-            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat text-wheat text-center rounded-md py-3 text-sm w-full md:min-w-[300px] md:text-2xl active:bg-green-950 cursor-pointer"
             data-name="drinks">
             DRINKS<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -112,7 +117,7 @@
               <path d="M3 7.8V3m0 0h4.8M3 3l6 6" />
             </svg></li>
           <li
-            class="bg-moss-green border-2 flex justify-center items-center border-wheat col-span-2  text-wheat text-center rounded-md py-3 text-sm w-full active:bg-green-950"
+            class="bg-moss-green border-2 flex justify-center items-center border-wheat col-span-2  text-wheat text-center rounded-md py-3 text-sm w-full md:min-w-[300px] md:text-2xl active:bg-green-950 cursor-pointer"
             data-name="special">
             SPECIAL<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -127,8 +132,10 @@
     </div>
   </section>
   <!-- Popup -->
-  <div class="pop hidden fixed backdrop-blur-md h-screen w-full p-4 top-0 z-[999] justify-between items-center">
-    <div class="bg-black bg-opacity-50 w-auto h-auto rounded-lg m-0 p-4 text-wheat overflow-scroll">
+  <div
+    class="pop hidden md:justify-center fixed backdrop-blur-md h-screen w-full top-0 z-[999] justify-between items-center">
+    <div
+      class="bg-black bg-opacity-50 md:p-8 w-full h-full md:h-auto md:max-w-lg md:rounded-lg md:m-0 p-4 text-wheat transition-all ease-in-out duration-1000 overflow-auto">
       <div class="flex justify-between mb-6">
         <h2 class="text-2xl uppercase" data-list-name="list">items</h2>
         <button onclick="closePop()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -146,36 +153,51 @@
 
   <!-- Our Outlets -->
 
-  <section id="outlets" class="h-screen bg-gradient-to-t from-to-grad to-wheat">
-    <div class="w-full h-full flex flex-col justify-evenly items-center">
-      <h1 class="text-4xl font-bold text-moss-green">Our Outlets</h1>
+  <section id="outlets" class="h-auto py-12 bg-gradient-to-t from-to-grad to-wheat flex justify-center">
+    <div class="w-full h-full flex flex-col justify-center items-center  max-w-[800px]">
+      <h1 class="text-4xl font-bold text-moss-green mb-12">Our Outlets</h1>
+      <div class="outlet flex flex-col md:flex-row justify-center gap-4">
+      </div>
     </div>
   </section>
+  <div class="flex flex-col"></div>
 
   <!-- Review Section -->
 
-  <section id="reviews" class="h-auto py-8 bg-gradient-to-t bg-moss-green">
-    <div class="w-full h-full flex flex-col justify-evenly items-center">
+  <section id="reviews" class="md:h-[50vh] py-8 bg-gradient-to-t bg-moss-green md:flex md:justify-center">
+    <div class="w-full h-full md:max-w-[500px] flex flex-col justify-evenly items-center">
       <h1 class="text-3xl text-center font-bold text-wheat">Comments from our customer</h1>
       <img src="assets/images/visitors/" alt="">
       <div class="w-full relative">
         <ul class="control" id="custom-control">
-          <li class="prev absolute top-1/2 z-10 left-2 text-moss-green bg-hunyadi-yellow p-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg></li>
-          <li class="next absolute top-1/2 z-10 right-2 bg-hunyadi-yellow text-moss-green p-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg></li>
+          <li
+            class="prev absolute top-1/2 z-10 left-0 md:-left-4 text-moss-green bg-hunyadi-yellow p-2 rounded-full cursor-pointer shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chevron-left">
+              <path d="m15 18-6-6 6-6" />
+            </svg></li>
+          <li
+            class="next absolute top-1/2 z-10 right-0 md:-right-2 bg-hunyadi-yellow text-moss-green p-2 rounded-full cursor-pointer shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chevron-right">
+              <path d="m9 18 6-6-6-6" />
+            </svg></li>
         </ul>
-        <div class="my-slider flex gap-6"></div>
-        </ul>
-    </div>
+        <div class="my-slider flex justify-items-center gap-6"></div>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
 
-  <section id="about" class="h-screen about bg-gradient-to-t from-to-grad to-wheat">
-    <div class="w-full h-full flex flex-col justify-evenly items-center">
-      <h1 class="text-4xl font-bold text-moss-green">ABOUT US</h1>
+  <section id="about" class="h-screen about flex justify-center bg-gradient-to-t from-to-grad to-wheat">
+    <div
+      class="w-full h-full md:h-auto  md:grid md:grid-cols-2 md:justify-items-center flex flex-col justify-evenly items-center md:max-w-[950px]">
+      <h1 class="text-4xl font-bold text-center md:text-6xl text-moss-green md:col-span-2">ABOUT US</h1>
       <img src="assets/images/about.png" alt="about" class="w-4/5">
-      <p class="text-center text-moss-green w-4/5 font-bold">
+      <p class="text-center text-moss-green w-4/5 font-bold md:text-2xl">
         Since 1961, Dada Boudi Restaurant has been a culinary cornerstone in Barrackpore, Kolkata, celebrated for its
         delicious Mughlai cuisine, especially biryani and kebabs. With three outlets, we pride ourselves on offering a
         family-friendly atmosphere, reasonable prices, and unforgettable dining experiences.
@@ -185,29 +207,77 @@
 
   <!-- Book a table -->
 
+  <section id="book" class="h-screen bg-gradient-to-t from-to-grad to-wheat flex justify-center">
+    <div class="w-full h-full flex flex-col justify-evenly items-center  md:grid md:grid-cols-2 max-w-[800px]">
+      <h1 class="text-4xl font-bold text-center text-moss-green my-6 md:text-6xl md:col-span-2">Book a table</h1>
+      <img src="assets/images/chicken on plate.png" alt="under dome cover" class="w-40 md:w-96">
+      <div class="w-full h-full flex flex-col justify-evenly items-center md:max-w-[800px]">
+        <form action="" class="w-10/12 h-full flex flex-col justify-center items-center gap-2">
+          <div class="w-full">
+            <input type="text" name="name" id="name"
+              class="w-full h-10 border-2 border-moss-green rounded-md px-4 md:text-xl md:py-6 outline-none" placeholder="Name">
+          </div>
+          <div class="w-full">
+            <input type="email" name="email" id="email"
+              class="w-full h-10 border-2 border-moss-green rounded-md md:text-xl md:py-6 px-4 outline-none" placeholder="Email">
+          </div>
+          <div class="w-full">
+            <input type="date" name="date" id="date"
+              class="w-full h-10 border-2 border-moss-green rounded-md md:text-xl md:py-6 px-4 outline-none">
+          </div>
+          <div class="w-full">
+            <input type="time" name="time" id="time"
+              class="w-full h-10 border-2 border-moss-green rounded-md md:text-xl md:py-6 px-4 outline-none">
+          </div>
+          <div class="w-full">
+            <select name="person" id="person"
+              class="py-2 px-4 w-full outline-none border-2 md:text-xl md:py-4 border-moss-green rounded-md md:text-xl">
+              <option value="0">Select Person</option>
+              <option value="1">Person 1</option>
+              <option value="2">Person 2</option>
+              <option value="3">Person 3</option>
+              <option value="4">Person 4</option>
+              <option value="5">Person 5</option>
+              <option value="6">Person 6</option>
+              <option value="7">Person 7</option>
+            </select>
+          </div>
+          <div class="w-full">
+            <button class="bg-moss-green text-wheat py-3 w-full rounded-md">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
 
   <!-- Contact Section -->
 
-  <section id="contact" class="h-screen contact flex justify-evenly bg-gradient-to-t from-to-grad to-wheat">
-    <div class="w-full h-full flex flex-col justify-center items-center text-moss-green">
-      <div class="w-4/5 h-auto text-center">
-        <h1 class="text-4xl font-bold mt-8">CONTACT US</h1>
+  <section id="contact"
+    class="h-screen contact flex justify-evenly md:justify-center bg-gradient-to-t from-to-grad to-wheat">
+    <div class="w-full h-full flex flex-col md:flex-row justify-center items-center text-moss-green md:items-center">
+      <div class="w-4/5 md:w-auto h-auto text-center md:p-12 md:flex md:flex-col md:justify-between md:h-[400px]">
+        <h1 class="text-4xl font-bold mt-8 md:text-5xl">CONTACT US</h1>
         <div class="text-center mt-10">
-          <h2 class="text-lg font-bold">Booking Request</h2>
-          <a href="tel:+918017099986" class="text-2xl font-bold">+91 80170 99986</a>
+          <h2 class="text-lg font-bold md:text-2xl">Booking Request</h2>
+          <a href="tel:+918017099986" class="text-2xl font-bold md:text-3xl">+91 80170 99986</a>
         </div>
         <div class="text-center mt-4">
-          <p class="font-bold text-xl">Location</p>
-          <p>12/1 Barrackpore S.N. Banerjee Road, Opposite Sukanto Sadan</p>
+          <p class="font-bold text-xl md:text-2xl">Location</p>
+          <p class="md:text-xl">12/1 Barrackpore S.N. Banerjee Road, Opposite Sukanto Sadan</p>
         </div>
-        <p class="font-bold mt-4 mb-4">Open: 12.00 am - 10.00pm</p>
+        <p class="font-bold mt-4 mb-4 md:text-lg">Open: 12.00 am - 10.00pm</p>
       </div>
 
       <div class="mt-8">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1320995614897!2d88.3696874!3d22.760478400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89a53d614f491%3A0x99eba74dc399fd57!2sDada%20Boudi%20Restaurant!5e0!3m2!1sen!2sin!4v1701871863504!5m2!1sen!2sin"
           width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade" class="md:hidden"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1320995614897!2d88.3696874!3d22.760478400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89a53d614f491%3A0x99eba74dc399fd57!2sDada%20Boudi%20Restaurant!5e0!3m2!1sen!2sin!4v1701871863504!5m2!1sen!2sin"
+          width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="md:block hidden"></iframe>
       </div>
     </div>
   </section>
@@ -278,6 +348,7 @@
     function closePop() {
       pop.classList.add('hidden');
       pop.classList.remove('flex');
+      document.querySelector('body').style.overflow = 'auto';
     };
 
   </script>
