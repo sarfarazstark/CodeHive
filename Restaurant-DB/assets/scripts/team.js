@@ -22,7 +22,7 @@ team.member.forEach(el => {
       EMAIL
     </a>
   </div>
-  <div class="flex justify-center gap-4 mt-6">${links}</div>
+  <div class="flex justify-center gap-4 my-6">${links}</div>
 </div>`;
   card.insertAdjacentHTML('afterbegin', html);
 })
