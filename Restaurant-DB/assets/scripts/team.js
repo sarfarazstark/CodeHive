@@ -20,6 +20,7 @@ team.member.forEach(el => {
   <a  href="mailto:${el.email}" class="h-auto w-auto rounded-2xl ${el.gradient} p-1">
     <span class="rounded-xl  flex h-full w-full items-center justify-center bg-gray-800 px-8 py-3 text-white">
       EMAIL
+    </span>
     </a>
   </div>
   <div class="flex justify-center gap-4 my-6">${links}</div>
