@@ -53,19 +53,20 @@
       "gradient": "bg-gradient-to-tr from-mozid to-to-mozid",
       "image": "assets/images/team/mozid.jpg",
       "links": [
+        "<a href=\"https://www.linkedin.com/in/rituja-sengupta-2b4b55253\" class=\"text-sm text-white bg-gradient-to-tr from-mozid to-to-mozid py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
 				"<a href=\"https://github.com/SkMojid\" class=\"text-sm text-white bg-gradient-to-tr from-mozid to-to-mozid py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
 				"<a href=\"https://instagram.com/its_mojid_sk\" class=\"text-sm text-white bg-gradient-to-tr from-mozid to-to-mozid py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
       ]
     },
     {
       "name": "Amir Alam",
-      "email": "77mojid77@gmail.com",
+      "email": "sameer72135@gmail.com",
       "role": "Reviewer/Helper",
       "gradient": "bg-gradient-to-tr from-amir to-to-amir",
       "image": "assets/images/team/amir.jpg",
       "links": [
 				"<a href=\"https://github.com/amiralamf4\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
-				"<a href=\"https://www.instagram.com/amiralamf4\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>",
+				"<a href=\"https://www.instagram.com/amiralamf_4\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>",
         "<a href=\"https://x.com/AmirAlam7\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-twitter\"></i></a>"
       ]
     },
