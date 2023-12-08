@@ -26,7 +26,8 @@ module.exports = {
         "to-akash": "#60efff"
       },
       fontFamily: {
-        "kulim" : "'Kulim Park', sans-serif"
+        "kulim" : "'Kulim Park', sans-serif",
+        "alata": "'Alata', sans-serif"
       }
     },
   },

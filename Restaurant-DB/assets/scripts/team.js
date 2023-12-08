@@ -15,7 +15,7 @@ team.member.forEach(el => {
       class="w-28 rounded-full -mt-16 border-4 border-moss-green">
   </div>
   <h1 class="text-moss-green text-center font-bold text-2xl">${el.name}</h1>
-  <p class="text-center text-gray-500 font-bold">${el.role}</p>
+  <p class="text-center text-gray-400">${el.role}</p>
   <div class="flex justify-center mt-8">
   <a  href="mailto:${el.email}" class="h-auto w-auto rounded-2xl ${el.gradient} p-1">
     <span class="rounded-xl  flex h-full w-full items-center justify-center bg-gray-800 px-8 py-3 text-white">
