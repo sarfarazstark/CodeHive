@@ -1061,15 +1061,9 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
-.from-chrysler-blue {
-  --tw-gradient-from: #fff95b var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 249 91 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-mozid {
-  --tw-gradient-from: #f9b16e var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 177 110 / 0) var(--tw-gradient-to-position);
+.from-\[\#affcaf\] {
+  --tw-gradient-from: #affcaf var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(175 252 175 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1085,15 +1079,27 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-priya {
-  --tw-gradient-from: #d397fa var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(211 151 250 / 0) var(--tw-gradient-to-position);
+.from-chrysler-blue {
+  --tw-gradient-from: #12dff3 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(18 223 243 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mozid {
+  --tw-gradient-from: #f9b16e var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(249 177 110 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-parwez {
   --tw-gradient-from: #9fccfa var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(159 204 250 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-priya {
+  --tw-gradient-from: #d397fa var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(211 151 250 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1107,6 +1113,16 @@ video {
   --tw-gradient-from: #9bf8f4 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(155 248 244 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-plum {
+  --tw-gradient-from: #affcaf var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(175 252 175 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-\[\#12dff3\] {
+  --tw-gradient-to: #12dff3 var(--tw-gradient-to-position);
 }
 
 .to-akash {
@@ -1126,7 +1142,7 @@ video {
 }
 
 .to-plum {
-  --tw-gradient-to: #ff930f var(--tw-gradient-to-position);
+  --tw-gradient-to: #affcaf var(--tw-gradient-to-position);
 }
 
 .to-priya {
@@ -1141,10 +1157,6 @@ video {
   --tw-gradient-to: #9bf8f4 var(--tw-gradient-to-position);
 }
 
-.to-to-mozid {
-  --tw-gradient-to: #f68080 var(--tw-gradient-to-position);
-}
-
 .to-to-akash {
   --tw-gradient-to: #60efff var(--tw-gradient-to-position);
 }
@@ -1153,12 +1165,16 @@ video {
   --tw-gradient-to: #ff5282 var(--tw-gradient-to-position);
 }
 
-.to-to-priya {
-  --tw-gradient-to: #8364e8 var(--tw-gradient-to-position);
+.to-to-mozid {
+  --tw-gradient-to: #f68080 var(--tw-gradient-to-position);
 }
 
 .to-to-parwez {
   --tw-gradient-to: #0974f1 var(--tw-gradient-to-position);
+}
+
+.to-to-priya {
+  --tw-gradient-to: #8364e8 var(--tw-gradient-to-position);
 }
 
 .to-to-rituja {
@@ -1167,6 +1183,10 @@ video {
 
 .to-to-sarfaraz {
   --tw-gradient-to: #6f7bf7 var(--tw-gradient-to-position);
+}
+
+.to-chrysler-blue {
+  --tw-gradient-to: #12dff3 var(--tw-gradient-to-position);
 }
 
 .bg-clip-text {
@@ -1209,6 +1229,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1249,9 +1274,9 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .text-center {
@@ -1448,12 +1473,20 @@ video {
   transition-duration: 1000ms;
 }
 
+.duration-150 {
+  transition-duration: 150ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ease-linear {
+  transition-timing-function: linear;
 }
 
 .after\:absolute::after {
@@ -1505,6 +1538,11 @@ video {
 
 .hover\:text-\[1\.180rem\]:hover {
   font-size: 1.180rem;
+}
+
+.hover\:text-amber-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
 }
 
 .active\:bg-green-950:active {
