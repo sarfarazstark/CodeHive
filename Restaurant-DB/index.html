@@ -23,11 +23,9 @@
 </head>
 
 <body class="bg-wheat font-kulim">
-
-  <main class="h-screen flex flex-col justify-between items-center bg-wheat">
-    <!-- Navbar Section -->
-
-    <nav class="flex justify-between items-center p-6 w-full md:max-w-[800px]">
+  <!-- Navbar Section -->
+  <header class="w-full flex justify-center fixed z-[99] bg-opacity-70 bg-wheat">
+    <nav class="flex justify-between items-center p-6 w-full md:max-w-[900px]">
       <div class="flex justify-between w-full">
         <h1 class="font-bold text-moss-green text-3xl uppercase">Dada boudi</h1>
         <button class="md:hidden nav-btn text-2xl text-moss-green" onclick="toggleMenu()"><svg
@@ -40,7 +38,7 @@
           </svg></button>
       </div>
       <ul id="nav-bar"
-        class="hidden md:flex md:border-none md:text-lg md:static md:m-0 md:p-0 md:w-full z-40 bg-transparent backdrop-blur-2xl flex-col gap-6 md:flex-row fixed left-0 text-center top-12 w-[90%] text-2xl text-moss-green border-b-2 border-moss-green p-6 m-4 rounded-md">
+        class="hidden md:flex md:border-none md:text-lg md:static md:m-0 md:p-0 md:w-full z-40 bg-transparent backdrop-blur-2xl flex-col gap-6 md:flex-row fixed left-0 text-center top-[4.28rem] w-[90%] text-2xl text-moss-green border-b-2 border-moss-green p-6 m-4 rounded-b-md">
         <li><a href="#" class="hove:font-bold hover:text-[1.180rem]">Home</a></li>
         <li><a href="#menu" class="hove:font-bold hover:text-[1.180rem]">Menu</a></li>
         <li><a href="#outlets" class="hove:font-bold hover:text-[1.180rem]">Outlets</a></li>
@@ -49,9 +47,13 @@
         <li><a href="#contact" class="hove:font-bold hover:text-[1.180rem]">Contact</a></li>
       </ul>
     </nav>
-    <!-- Hero Section -->
+  </header>
+
+  <!-- Hero Section -->
+
+  <main class="h-screen flex flex-col justify-between items-center bg-wheat">
     <div class="w-full h-full md:max-w-[800px] flex flex-col justify-center items-center gap-4 md:grid md:grid-cols-2">
-      <img src="assets/images/biryani.png" alt="chicken biryani image" class="w-56 md:w-full">
+      <img src="assets/images/biryani.png" alt="chicken biryani image" class="mt-8 w-56 md:w-full">
       <div class="text-center flex flex-col justify-center items-center">
         <h1 class="font-extrabold text-3xl text-moss-green mb-3 md:text-4xl">Welcome to <br> Dada Boudi Restaurant</h1>
         <p class="w-4/5 md:w-full text-center text-moss-green md:text-xl">Indulge in the authentic flavors of Mughlai
@@ -161,7 +163,7 @@
 
   <!-- Our Outlets -->
 
-  <section id="outlets" class="h-auto py-12 bg-wheat flex justify-center">
+  <section id="outlets" class="md:h-screen h-auto py-12 bg-wheat flex justify-center">
     <div class="w-full h-full flex flex-col justify-center items-center  max-w-[800px]">
       <h1 class="text-4xl font-bold text-moss-green mb-12">Our Outlets</h1>
       <div class="outlet flex flex-col md:flex-row justify-center gap-4">
@@ -172,10 +174,47 @@
 
   <!-- Review Section -->
 
-  <section id="reviews" class="md:h-[50vh] py-8 bg-gradient-to-t bg-moss-green md:flex md:justify-center">
+  <section id="reviews" class="h-screen py-8 bg-gradient-to-t bg-moss-green md:flex md:justify-center">
     <div class="w-full h-full md:max-w-[500px] flex flex-col justify-evenly items-center">
-      <h1 class="text-3xl text-center font-bold text-wheat">Comments from our customer</h1>
+      <h1 class="text-3xl md:text-5xl text-center font-bold mt-16 text-wheat">Comments from our customer</h1>
       <img src="assets/images/visitors/" alt="">
+      <div class="w-fit  p-4 h-auto bg-transparent mt-6  text-wheat rounded-md">
+        <div class="w-full flex items-center justify-center mb-4">
+          <ul class="flex">
+            <li class="text-amber-500"><svg class="w-8 h-8 aria-hidden=" true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg></li>
+            <li class="text-amber-500"><svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg></li>
+            <li class="text-amber-500"><svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg></li>
+            <li class="text-amber-500"><svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg></li>
+            <li class="text-amber-500"><svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor" viewBox="0 0 22 20">
+                <path
+                  d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+              </svg></li>
+          </ul>
+        </div>
+        <p class="italic text-sm md:text-lg">‟Visited this hidden gem for a dinner treat and was pleasantly surprised.
+          The rooftop setting provided a romantic atmosphere. Ordered the special biriyani and was blown away by the
+          rich flavors and aromatic spices. The staff was attentive, and the service was prompt. A perfect place for a
+          cozy dinner date!”
+        <h2 class="font-bold text-xl">~ Aditi Chatterjee</h2>
+        </p>
+      </div>
       <div class="w-full relative">
         <ul class="control" id="custom-control">
           <li
@@ -195,7 +234,7 @@
             </svg>
           </li>
         </ul>
-        <div class="my-slider flex justify-items-center gap-6"></div>
+        <div class="my-slider w-fit flex justify-items-center gap-4"></div>
       </div>
     </div>
   </section>
@@ -258,9 +297,19 @@
 
   </section>
 
+  <!-- Meet our team -->
+
+  <!-- <section class="md:h-screen h-auto bg-amber-50 p-8">
+    <div>
+      <h1
+        class="text-6xl bg-clip-text text-transparent bg-gradient-to-tr to-plum from-chrysler-blue font-bold text-center">
+        Meet our team</h1>
+    </div>
+  </section> -->
+
   <!-- Contact Section -->
 
-  <section id="contact" class="h-screen contact flex justify-evenly md:justify-center bg-wheat">
+  <section id="contact" class="h-auto md:h-screen contact flex justify-evenly md:justify-center bg-wheat">
     <div class="w-full h-full flex flex-col md:flex-row justify-center items-center text-moss-green md:items-center">
       <div class="w-4/5 md:w-auto h-auto text-center md:p-12 md:flex md:flex-col md:justify-between md:h-[400px]">
         <h1 class="text-4xl font-bold mt-8 md:text-5xl">CONTACT US</h1>
@@ -278,12 +327,8 @@
       <div class="mt-8">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1320995614897!2d88.3696874!3d22.760478400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89a53d614f491%3A0x99eba74dc399fd57!2sDada%20Boudi%20Restaurant!5e0!3m2!1sen!2sin!4v1701871863504!5m2!1sen!2sin"
-          width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" class="md:hidden"></iframe>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1320995614897!2d88.3696874!3d22.760478400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89a53d614f491%3A0x99eba74dc399fd57!2sDada%20Boudi%20Restaurant!5e0!3m2!1sen!2sin!4v1701871863504!5m2!1sen!2sin"
-          width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" class="md:block hidden"></iframe>
+          width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -321,6 +366,12 @@
       <p>Coded By <a href="https://github.com/sarfarazstark/CodeHive" class="font-bold">CodeHive</a></p>
     </div>
   </footer>
+  <button class="hidden fixed z-[99] rounded-lg bg-hunyadi-yellow text-wheat p-4 bottom-6 right-4"
+    onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round" class="lucide lucide-arrow-big-up">
+      <path d="M9 18v-6H5l7-7 7 7h-4v6H9z" />
+    </svg></button>
   <script type="module" src="./assets/scripts/script.js"></script>
   <script>
     let menuToggle = false;
@@ -359,6 +410,27 @@
     function thankYou() {
       alert('Thank you for booking a table with us. We will contact you soon.')
     }
+  </script>
+  <script>
+    // Get the button
+    const mybutton = document.getElementById("myBtn");
+
+    const scrollFunction = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    const topFunction = function () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = () => scrollFunction();
   </script>
 </body>
 
