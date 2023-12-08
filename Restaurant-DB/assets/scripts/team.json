@@ -1,14 +1,85 @@
 {
-  "member": [
+	"member": [
+		{
+			"name": "Md Sarfaraz Alam",
+			"email": "sarfarazstark@gmail.com",
+			"role": "Web Developer/Leader",
+      "gradient": "bg-gradient-to-tr from-sarfaraz to-to-sarfaraz",
+			"image": "https://avatars.githubusercontent.com/u/71469354?v=4",
+      "links": [
+			"<a href=\"https://github.com/sarfarazstark\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
+			"<a href=\"https://www.linkedin.com/in/sarfarazstark/\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
+			"<a href=\"https://instagram.com/sarfarazstark\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
+    ]
+		},
+		{
+			"name": "Parwez Akhtar",
+			"email": "pa661946@gmail.com",
+			"role": "Data Extractor",
+      "gradient": "bg-gradient-to-tr from-parwez to-to-parwez",
+			"image": "assets/images/team/parwez.jpg",
+			"links": [
+				"<a href=\"https://www.linkedin.com/in/parwez-akhtar-45927625b\" class=\"text-sm text-white bg-gradient-to-tr from-parwez to-to-parwez py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
+				"<a href=\"https://instagram.com/ashiiff_18\" class=\"text-sm text-white bg-gradient-to-tr from-parwez to-to-parwez py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
+			]
+		},
+		{
+			"name": "Rituja Sengupta",
+			"email": "Officialritujasengupta@gmail.com",
+			"role": "Image Curator",
+      "gradient": "bg-gradient-to-tr from-rituja to-to-rituja",
+      "image": "assets/images/team/rituja.jpg",
+			"links": [
+				"<a href=\"https://www.linkedin.com/in/rituja-sengupta-2b4b55253\" class=\"text-sm text-white bg-gradient-to-tr from-rituja to-to-rituja py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
+				"<a href=\"https://instagram.com/___r_i_t_u_j_a___\" class=\"text-sm text-white bg-gradient-to-tr from-rituja to-to-rituja py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>",
+				"<a href=\"https://github.com/priyarituja\" class=\"text-sm text-white bg-gradient-to-tr from-rituja to-to-rituja py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>"
+			]
+		},
+		{
+			"name": "Priya Panda",
+			"email": "pandapriya102003@gmail.com",
+			"role": "Image Curator",
+      "gradient": "bg-gradient-to-tr from-priya to-to-priya",
+      "image": "assets/images/team/priya.jpg",
+			"links": [
+				"<a href=\"https://github.com/priyarituja\" class=\"text-sm text-white bg-gradient-to-tr from-priya to-to-priya py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
+				"<a href=\"https://instagram.com/priyapanda79\" class=\"text-sm text-white bg-gradient-to-tr from-priya to-to-priya py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
+			]
+		},
     {
-      "name": "Md Sarfaraz Alam",
-      "email": "sarfarazstark@gmail.com",
-      "role": "Web Developer",
-      "image": "https://avatars.githubusercontent.com/u/71469354?v=4",
-      "github": "https://github.com/sarfarazstark",
-      "linkedin": "https://www.linkedin.com/in/sarfarazstark/",
-      "twitter": "https://twitter.com/sarfaraz_stark",
-      "description": "I am a web developer and a web designer. I am currently pursuing Bachelor of Computer Application from MAKAUT, West Bengal. I am a frontend developer and have worked on various projects. I am also a member of the Google Developer Students Club, GitHub Student Developer Pack of my college"
+      "name": "Mojid Sk",
+      "email": "77mojid77@gmail.com",
+      "role": "Reviewer/Helper",
+      "gradient": "bg-gradient-to-tr from-mozid to-to-mozid",
+      "image": "assets/images/team/mozid.jpg",
+      "links": [
+				"<a href=\"https://github.com/SkMojid\" class=\"text-sm text-white bg-gradient-to-tr from-mozid to-to-mozid py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
+				"<a href=\"https://instagram.com/its_mojid_sk\" class=\"text-sm text-white bg-gradient-to-tr from-mozid to-to-mozid py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
+      ]
+    },
+    {
+      "name": "Amir Alam",
+      "email": "77mojid77@gmail.com",
+      "role": "Reviewer/Helper",
+      "gradient": "bg-gradient-to-tr from-amir to-to-amir",
+      "image": "assets/images/team/amir.jpg",
+      "links": [
+				"<a href=\"https://github.com/amiralamf4\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
+				"<a href=\"https://www.instagram.com/amiralamf4\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>",
+        "<a href=\"https://x.com/AmirAlam7\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-twitter\"></i></a>"
+      ]
+    },
+    {
+      "name": "Akash Sahu",
+      "email": "sahuji4241@gmail.com",
+      "role": "Documenter",
+      "gradient": "bg-gradient-to-tr from-akash to-to-akash",
+      "image": "assets/images/team/akash.jpg",
+      "links": [
+				"<a href=\"https://www.linkedin.com/in/akash-kumar-40303924b\" class=\" text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
+        "<a href=\"https://x.com/Akash____sahu\" class=\"text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-twitter\"></i></a>",
+        "<a href=\"https://instagram.com/akash_s____\" class=\"text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
+      ]
     }
-  ]
+	]
 }

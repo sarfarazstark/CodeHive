@@ -1,6 +1,7 @@
 import data from './data.json' assert { type: 'json' };
 import reviews from './reviews.json' assert { type: 'json' };
-import {tns} from '../../node_modules/tiny-slider/src/tiny-slider.js'
+import team from './team.json' assert { type: 'json' };
+import { tns } from '../../node_modules/tiny-slider/src/tiny-slider.js'
 console.log(data.restaurantName);
 
 const listHeaderName = document.querySelector('[data-list-name]')
@@ -8,7 +9,7 @@ const pop = document.querySelector('.pop');
 const menu = document.querySelector('.menu-item').querySelectorAll('li');
 const listShow = document.querySelector('#item-list');
 menu.forEach(el => {
-  el.addEventListener('click', function(){
+  el.addEventListener('click', function () {
     document.querySelector('body').style.overflow = 'hidden';
     listShow.innerHTML = '';
     pop.classList.remove('hidden');
@@ -24,7 +25,7 @@ menu.forEach(el => {
         <p class="text-sm opacity-80">${value.description}</p>
       </div>
     </div>`;
-    listShow.insertAdjacentHTML('afterbegin', html);
+      listShow.insertAdjacentHTML('afterbegin', html);
     });
   })
 })
@@ -55,7 +56,7 @@ reviews.reviews.forEach(el => {
   </div>
   <blockquote class="italic text-sm">‟${el.content}”</blockquote>
 </div>`
-reviewContainer.insertAdjacentHTML('afterbegin', html);
+  reviewContainer.insertAdjacentHTML('afterbegin', html);
 })
 
 var slider = tns({
@@ -96,8 +97,8 @@ const outlets = [
 const outletContainer = document.querySelector('.outlet');
 
 outlets.forEach(element => {
-  const html = 
-  `<div class="bg-moss-green p-4 w-80 md:w-[30%] rounded-lg text-wheat flex flex-col">
+  const html =
+    `<div class="bg-moss-green p-4 w-80 md:w-[30%] rounded-lg text-wheat flex flex-col">
   <img src="assets/images/${element.img}" alt="outlet" class="rounded-[4px] mb-4">
   <div class="flex flex-col mb-2">
   <h1 class="text-lg">${element.address}</h1>
@@ -113,5 +114,32 @@ outlets.forEach(element => {
       </svg></a>
   </div>
 </div>`
-outletContainer.insertAdjacentHTML('afterbegin', html);
+  outletContainer.insertAdjacentHTML('afterbegin', html);
+})
+
+const card = document.querySelector('.cards')
+team.member.forEach(el => {
+  let links = [];
+  el.links.forEach(el => {
+    links = links + el;
+  })
+  console.log(links);
+  const html =
+`<div class="bg-white w-[350px] md:last:col-start-[-3] h-auto p-4 rounded-lg flex flex-col">
+  <div class="flex flex-col items-center mb-6">
+    <div class="w-full flex items-center h-24 rounded-lg ${el.gradient}"></div>
+    <img src="${el.image}" alt="${el.name}"
+      class="w-28 rounded-full -mt-16 border-4 border-moss-green">
+  </div>
+  <h1 class="text-moss-green text-center font-bold text-2xl">${el.name}</h1>
+  <p class="text-center text-gray-500 font-bold">${el.role}</p>
+  <div class="flex justify-center mt-8">
+  <a  href="mailto:" class="h-auto w-auto rounded-2xl ${el.gradient} p-1">
+    <span class="rounded-xl  flex h-full w-full items-center justify-center bg-gray-800 px-8 py-3 text-white">
+      EMAIL
+    </a>
+  </div>
+  <div class="flex justify-center gap-4 mt-6">${links}</div>
+</div>`;
+  card.insertAdjacentHTML('afterbegin', html);
 })
