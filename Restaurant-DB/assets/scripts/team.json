@@ -53,7 +53,6 @@
       "gradient": "bg-gradient-to-tr from-mozid to-to-mozid",
       "image": "assets/images/team/mozid.jpg",
       "links": [
-        "<a href=\"https://www.linkedin.com/in/rituja-sengupta-2b4b55253\" class=\"text-sm text-white bg-gradient-to-tr from-mozid to-to-mozid py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
 				"<a href=\"https://github.com/SkMojid\" class=\"text-sm text-white bg-gradient-to-tr from-mozid to-to-mozid py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
 				"<a href=\"https://instagram.com/its_mojid_sk\" class=\"text-sm text-white bg-gradient-to-tr from-mozid to-to-mozid py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
       ]
