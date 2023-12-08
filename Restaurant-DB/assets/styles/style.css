@@ -1273,12 +1273,12 @@ video {
   text-align: center;
 }
 
-.font-kulim {
-  font-family: 'Kulim Park', sans-serif;
-}
-
 .font-alata {
   font-family: 'Alata', sans-serif;
+}
+
+.font-kulim {
+  font-family: 'Kulim Park', sans-serif;
 }
 
 .text-2xl {
@@ -1347,9 +1347,9 @@ video {
   color: rgb(162 28 175 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
+.text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-hunyadi-yellow {
@@ -1376,11 +1376,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1642,10 +1637,6 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1746,5 +1737,11 @@ video {
 
   .md\:last\:col-start-\[-3\]:last-child {
     grid-column-start: -3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
