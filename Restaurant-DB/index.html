@@ -73,7 +73,8 @@
 
   <main class="h-screen flex flex-col justify-between lg:justify-center items-center bg-wheat md:bg-hero-bg">
     <div
-      class="w-full h-full lg:h-auto flex md:flex-row-reverse lg:p-12 rounded-lg md:max-w-[900px] flex-col justify-center items-center gap-4 lg:bg-lime-100 lg:bg-opacity-50 lg:backdrop-blur-lg">
+      class="w-full h-full lg:h-auto flex md:flex-row-reverse lg:p-12 rounded-lg md:max-w-[900px] 
+      flex-col justify-center items-center gap-4 lg:bg-lime-100 lg:bg-opacity-40 lg:backdrop-blur-xl">
       <img src="assets/images/biryani.png" alt="chicken biryani image" class="mt-20 lg:mt-0 w-56 md:w-1/2">
       <div class="text-center flex flex-col md:items-start justify-center items-center ">
         <h1 class="font-extrabold md:text-left text-3xl text-moss-green mb-3 md:text-5xl"><span
@@ -190,7 +191,7 @@
   <section id="outlets"
     class="lg:items-center lg:bg-outlet-bg lg:bg-no-repeat lg:bg-cover md:h-screen h-auto py-12 flex justify-center">
     <div
-      class="lg:bg-[#e3e79a] lg:bg-opacity-70 lg:backdrop-blur-lg w-full h-full lg:w-auto lg:h-auto flex flex-col justify-center items-center max-w-[900px] lg:p-12 lg:overflow-hidden lg:rounded-xl">
+      class="md:bg-lime-100 md:w-auto md:h-auto md:bg-opacity-40 md:backdrop-blur-xl w-full h-full flex flex-col justify-center items-center max-w-[900px] lg:p-12 lg:overflow-hidden lg:rounded-xl">
       <h1 class="text-4xl font-bold text-moss-green mb-12">Our Outlets</h1>
       <div class="outlet flex flex-col md:flex-row justify-center gap-4">
       </div>
@@ -338,10 +339,16 @@
               <option value="7">Person 7</option>
             </select>
           </div>
-          <div class="flex items-start"><label for="newsletter" class="text-wheat">Opt in offers and promotion</label>
-            <input type="checkbox" name="newsletter" id="newsletter" required checked></div>
-          <div class="flex items-start"><label for="tandc" class="text-wheat">Terms and Conditions</label> <input
-              type="checkbox" name="tandc" id="tandc" required checked></div>
+          <div class="flex items-start justify-between w-full gap-x-6 my-4">
+            <div class="flex">
+              <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" id="hs-checkbox-group-1" checked>
+              <label for="hs-checkbox-group-1" class="text-sm text-wheat ms-3">Offers and Promotion</label>
+            </div>
+              <div class="flex">
+                <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" id="hs-checkbox-group-2" required>
+                <label for="hs-checkbox-group-2" class="text-sm text-hunyadi-yellow ms-3"><a href="./tandc.html">Terms And Conditions</a></label>
+              </div>
+          </div>
           <button type="submit" class="bg-wheat text-moss-green py-3 w-full rounded-md font-bold">Book Now</button>
         </form>
       </div>
