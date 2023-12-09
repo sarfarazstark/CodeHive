@@ -1,17 +1,17 @@
 {
 	"member": [
-		{
-			"name": "Md Sarfaraz Alam",
-			"email": "sarfarazstark@gmail.com",
-			"role": "Web Developer/Leader",
-      "gradient": "bg-gradient-to-tr from-sarfaraz to-to-sarfaraz",
-			"image": "https://avatars.githubusercontent.com/u/71469354?v=4",
+    {
+      "name": "Akash Sahu",
+      "email": "sahuji4241@gmail.com",
+      "role": "Documenter",
+      "gradient": "bg-gradient-to-tr from-akash to-to-akash",
+      "image": "assets/images/team/akash.jpg",
       "links": [
-			"<a href=\"https://github.com/sarfarazstark\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
-			"<a href=\"https://www.linkedin.com/in/sarfarazstark/\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
-			"<a href=\"https://instagram.com/sarfarazstark\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
-    ]
-		},
+				"<a href=\"https://www.linkedin.com/in/akash-kumar-40303924b\" class=\" text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
+        "<a href=\"https://x.com/Akash____sahu\" class=\"text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-twitter\"></i></a>",
+        "<a href=\"https://instagram.com/akash_s____\" class=\"text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
+      ]
+    },
 		{
 			"name": "Parwez Akhtar",
 			"email": "pa661946@gmail.com",
@@ -70,18 +70,18 @@
 				"<a href=\"https://www.instagram.com/amiralam_f4\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>",
         "<a href=\"https://x.com/AmirAlam7\" class=\"text-sm text-white bg-gradient-to-tr from-amir to-to-amir py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-twitter\"></i></a>"
       ]
-    },
+    },	
     {
-      "name": "Akash Sahu",
-      "email": "sahuji4241@gmail.com",
-      "role": "Documenter",
-      "gradient": "bg-gradient-to-tr from-akash to-to-akash",
-      "image": "assets/images/team/akash.jpg",
+			"name": "Md Sarfaraz Alam",
+			"email": "sarfarazstark@gmail.com",
+			"role": "Web Developer/Leader",
+      "gradient": "bg-gradient-to-tr from-sarfaraz to-to-sarfaraz",
+			"image": "https://avatars.githubusercontent.com/u/71469354?v=4",
       "links": [
-				"<a href=\"https://www.linkedin.com/in/akash-kumar-40303924b\" class=\" text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
-        "<a href=\"https://x.com/Akash____sahu\" class=\"text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-twitter\"></i></a>",
-        "<a href=\"https://instagram.com/akash_s____\" class=\"text-sm text-white bg-gradient-to-tr from-akash to-to-akash py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
-      ]
-    }
+			"<a href=\"https://github.com/sarfarazstark\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i></a>",
+			"<a href=\"https://www.linkedin.com/in/sarfarazstark/\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-linkedin\"></i></a>",
+			"<a href=\"https://instagram.com/sarfarazstark\" class=\"text-sm text-white bg-gradient-to-tr from-sarfaraz to-to-sarfaraz py-2 px-3 rounded-full\" target=\"_blank\"><i class=\"fa-brands fa-instagram\"></i></a>"
+    ]
+		}
 	]
 }
