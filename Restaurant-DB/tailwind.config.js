@@ -28,6 +28,12 @@ module.exports = {
       fontFamily: {
         "kulim" : "'Kulim Park', sans-serif",
         "alata": "'Alata', sans-serif"
+      },
+      backgroundImage: {
+        "about-bg": "linear-gradient(to top, hsla(35, 93%, 88%, 0.7), hsla(35, 100%, 74%, 0.7)), url('../../assets/images/bg/bg-4.jpg')",
+        "contact-bg": "linear-gradient(to top, hsla(35, 93%, 88%, 0.7), hsla(35, 100%, 74%, 0.7)), url('../../assets/images/bg/bg-1.jpg')",
+        "outlet-bg": "linear-gradient(to top, hsla(35, 93%, 88%, 0.7), hsla(35, 100%, 74%, 0.7)), url('../../assets/images/bg/bg-2.jpg')",
+        "hero-bg": "linear-gradient(to top, hsla(35, 93%, 88%, 0.7), hsla(35, 100%, 74%, 0.7)), url('../../assets/images/bg/bg-3.jpg')"
       }
     },
   },

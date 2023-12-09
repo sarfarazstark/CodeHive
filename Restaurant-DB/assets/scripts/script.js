@@ -97,7 +97,7 @@ const outletContainer = document.querySelector('.outlet');
 
 outlets.forEach(element => {
   const html =
-    `<div class="bg-moss-green p-4 w-80 md:w-[30%] rounded-lg text-wheat flex flex-col">
+  `<div class="bg-moss-green lg:bg-[#323B02] lg:bg-opacity-95 lg:backdrop-blur-lg p-4 w-80 md:w-[30%] lg:w-1/3 rounded-lg text-wheat flex flex-col">
   <img src="assets/images/${element.img}" alt="outlet" class="rounded-[4px] mb-4">
   <div class="flex flex-col mb-2">
   <h1 class="text-lg">${element.address}</h1>

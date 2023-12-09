@@ -25,7 +25,7 @@
 <body class="bg-wheat font-kulim">
   <!-- Navbar Section -->
   <header class="w-full flex justify-center fixed z-[99] bg-opacity-70 bg-wheat">
-    <nav class="flex justify-between items-center p-6 w-full md:max-w-[900px]">
+    <nav class="flex justify-between items-center p-6 lg:px-0 w-full md:max-w-[900px]">
       <div class="flex justify-between w-full">
         <h1 class="font-bold text-moss-green text-3xl uppercase"><a href="./index.html">Dada boudi</a></h1>
         <button class="md:hidden nav-btn text-2xl text-moss-green" onclick="toggleMenu()"><svg
@@ -39,31 +39,47 @@
       </div>
       <ul id="nav-bar"
         class="hidden items-center md:flex md:border-none md:text-lg md:static md:m-0 md:p-0 md:w-full z-40 bg-transparent backdrop-blur-2xl flex-col gap-6 md:flex-row fixed left-0 text-center top-[4.28rem] w-[90%] text-2xl text-moss-green border-b-2 border-moss-green p-6 m-4 rounded-b-md">
-        <li><a href="#" class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Home</a></li>
-        <li><a href="#menu" class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Menu</a></li>
-        <li><a href="#outlets" class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Outlets</a></li>
-        <li><a href="#reviews" class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Reviews</a></li>
-        <li><a href="#about" class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">About</a></li>
-        <li><a href="#contact" class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Contact</a></li>
-        <li class="h-auto flex items-center w-auto rounded-lg bg-gradient-to-tr from-plum to-chrysler-blue p-1"><a  href="./team.html" class="font-bold py-[2px] text-xl px-4 text-wheat rounded-md bg-gray-800">Team</a></li>
-      </ul> 
+        <li><a href="#"
+            class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Home</a>
+        </li>
+        <li><a href="#menu"
+            class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Menu</a>
+        </li>
+        <li><a href="#outlets"
+            class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Outlets</a>
+        </li>
+        <li><a href="#reviews"
+            class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Reviews</a>
+        </li>
+        <li><a href="#about"
+            class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">About</a>
+        </li>
+        <li><a href="#contact"
+            class="transition-all ease-linear duration-150 hover:text-amber-600 font-bold hover:text-[1.180rem]">Contact</a>
+        </li>
+        <li class="h-auto flex items-center w-auto rounded-lg bg-gradient-to-tr from-plum to-chrysler-blue p-1"><a
+            href="./team.html" class="font-bold py-[2px] text-xl px-4 text-wheat rounded-md bg-gray-800">Team</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
 
-  <main class="h-screen flex flex-col justify-between items-center bg-wheat">
-    <div class="w-full h-full md:max-w-[800px] flex flex-col justify-center items-center gap-4 md:grid md:grid-cols-2">
-      <img src="assets/images/biryani.png" alt="chicken biryani image" class="mt-8 w-56 md:w-full">
-      <div class="text-center flex flex-col justify-center items-center">
-        <h1 class="font-extrabold text-3xl text-moss-green mb-3 md:text-4xl">Welcome to <br> Dada Boudi Restaurant</h1>
-        <p class="w-4/5 md:w-full text-center text-moss-green md:text-xl">Indulge in the authentic flavors of Mughlai
+  <main class="h-screen flex flex-col justify-between lg:justify-center items-center bg-wheat bg-hero-bg">
+    <div
+      class="w-full h-full lg:h-auto flex md:flex-row-reverse lg:p-12 rounded-lg md:max-w-[900px] flex-col justify-center items-center gap-4 lg:bg-lime-100 lg:bg-opacity-50 lg:backdrop-blur-lg">
+      <img src="assets/images/biryani.png" alt="chicken biryani image" class="mt-20 lg:mt-0 w-56 md:w-1/2">
+      <div class="text-center flex flex-col md:items-start justify-center items-center ">
+        <h1 class="font-extrabold md:text-left text-3xl text-moss-green mb-3 md:text-5xl"><span
+            class="md:text-4xl">Welcome to</span><br> Dada Boudi Restaurant</h1>
+        <p class="w-4/5 md:w-full text-center md:text-left text-moss-green md:text-2xl">Indulge in the authentic flavors
+          of Mughlai
           biryani and kebabs, local
           favorites that define our tradition. our restaurant invites you to book a table today and experience the
           essence
           where tradition meets taste!</p>
         <a href="#book"
-          class="px-10 py-3 bg-moss-green text-wheat rounded-md w-4/5 text-center text-lg my-6 md:w-full">Book
+          class="px-10 py-3 bg-moss-green text-wheat rounded-md w-4/5 text-center text-lg my-6 md:w-3/4">Book
           A Table</a>
       </div>
     </div>
@@ -147,7 +163,7 @@
   <div
     class="pop hidden md:justify-center fixed backdrop-blur-md h-screen w-full top-0 z-[999] justify-between items-center">
     <div
-      class="bg-black bg-opacity-50 md:p-8 w-full h-full md:h-auto md:max-w-lg md:rounded-lg md:m-0 p-4 text-wheat transition-all ease-in-out duration-1000 overflow-auto">
+      class="bg-black bg-opacity-70 md:p-8 w-full h-full md:h-auto md:max-w-lg md:rounded-lg md:m-0 p-4 text-wheat transition-all ease-in-out duration-1000 overflow-auto">
       <div class="flex justify-between mb-6">
         <h2 class="text-2xl uppercase" data-list-name="list">items</h2>
         <button onclick="closePop()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -165,14 +181,15 @@
 
   <!-- Our Outlets -->
 
-  <section id="outlets" class="md:h-screen h-auto py-12 bg-wheat flex justify-center">
-    <div class="w-full h-full flex flex-col justify-center items-center  max-w-[800px]">
+  <section id="outlets"
+    class="lg:items-center lg:bg-outlet-bg lg:bg-no-repeat lg:bg-cover md:h-screen h-auto py-12 flex justify-center">
+    <div
+      class="lg:bg-[#e3e79a] lg:bg-opacity-70 lg:backdrop-blur-lg w-full h-full lg:w-auto lg:h-auto flex flex-col justify-center items-center max-w-[900px] lg:p-12 lg:overflow-hidden lg:rounded-xl">
       <h1 class="text-4xl font-bold text-moss-green mb-12">Our Outlets</h1>
       <div class="outlet flex flex-col md:flex-row justify-center gap-4">
       </div>
     </div>
   </section>
-  <div class="flex flex-col"></div>
 
   <!-- Review Section -->
 
@@ -243,23 +260,42 @@
 
   <!-- About Section -->
 
-  <section id="about" class="h-screen about flex justify-center bg-wheat">
+  <section id="about" class="h-screen about flex justify-center bg-about-bg bg-cover">
     <div
-      class="w-full h-full md:h-auto  md:grid md:grid-cols-2 md:justify-items-center flex flex-col justify-evenly items-center md:max-w-[950px]">
+      class="w-full h-full md:justify-items-center md:items-center flex flex-col justify-evenly items-center py-12">
       <h1 class="text-4xl font-bold text-center md:text-6xl text-moss-green md:col-span-2">ABOUT US</h1>
-      <img src="assets/images/about.png" alt="about" class="w-4/5">
-      <p class="text-center text-moss-green w-4/5 font-bold md:text-2xl">
-        Since 1961, Dada Boudi Restaurant has been a culinary cornerstone in Barrackpore, Kolkata, celebrated for its
-        delicious Mughlai cuisine, especially biryani and kebabs. With three outlets, we pride ourselves on offering a
-        family-friendly atmosphere, reasonable prices, and unforgettable dining experiences.
-      </p>
+      <div class="flex flex-row-reverse items-center md:rounded-lg md:bg-lime-100 md:w-auto md:h-auto md:bg-opacity-40 md:backdrop-blur-xl md:p-16 md:max-w-[900px]">
+      <img src="assets/images/about.png" alt="about" class="w-4/5 md:w-1/2 md:h-1/2">
+      <div class="flex flex-col items-center md:items-start  rounded-lg">
+        <p class="text-center md:text-left text-moss-green w-4/5 font-bold md:text-2xl">
+          Since 1961, Dada Boudi Restaurant has been a culinary cornerstone in Barrackpore, Kolkata, celebrated for its
+          delicious Mughlai cuisine, especially biryani and kebabs. With three outlets, we pride ourselves on offering a
+          family-friendly atmosphere, reasonable prices, and unforgettable dining experiences.
+        </p>
+        <div class="flex justify-center gap-6 md:w-full md:justify-start mt-8 text-moss-green">
+          <h2 class="flex flex-col text-4xl font-bold">
+            50+
+            <span class="text-sm font-normal">Years of experience</span>
+          </h2>
+          <h2 class="flex flex-col text-4xl font-bold">
+            3+
+            <span class="text-sm font-normal">Outlets</span>
+          </h2>
+          <h2 class="flex flex-col text-4xl font-bold">
+            1m+
+            <span class="text-sm font-normal">Happy Customer</span>
+          </h2>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
   <!-- Book a table -->
 
-  <section id="book" class="h-screen bg-moss-green text-wheat flex justify-center">
-    <div class="w-full h-full flex flex-col justify-evenly items-center  md:grid md:grid-cols-2 max-w-[800px]">
+  <section id="book" class="h-auto md:h-screen bg-moss-green text-wheat flex justify-center">
+    <div
+      class="w-full h-full flex flex-col justify-evenly items-center  md:grid md:grid-cols-2 max-w-[900px] mb-8 mt-14">
       <h1 class="text-4xl font-bold text-center text-w my-6 md:text-6xl md:col-span-2">Book a table</h1>
       <img src="assets/images/chicken on plate.png" alt="under dome cover" class="w-72 md:w-96">
       <div class="w-full h-auto flex flex-col justify-evenly items-center md:max-w-[800px]">
@@ -271,7 +307,9 @@
           <input type="email" name="email" id="email"
             class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none"
             placeholder="Email" required>
-
+          <input type="tel" name="tel" id="tel"
+            class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none"
+            placeholder="Phone Number +91" required>
           <input type="text" name="date" id="date"
             class="w-full h-10 bg-wheat shadow-inner shadow-black rounded-md md:text-xl md:py-6 px-4 outline-none"
             placeholder="Enter date e.g 31/12/2023" required>
@@ -300,9 +338,12 @@
 
   <!-- Contact Section -->
 
-  <section id="contact" class="h-auto md:h-screen contact flex justify-evenly md:justify-center bg-wheat">
-    <div class="w-full h-full flex flex-col md:flex-row justify-center items-center text-moss-green md:items-center">
-      <div class="w-4/5 md:w-auto h-auto text-center md:p-12 md:flex md:flex-col md:justify-between md:h-[400px]">
+  <section id="contact"
+    class="h-auto md:h-screen contact flex justify-evenly md:justify-center lg:items-center lg:bg-contact-bg lg:p-4 lg:bg-no-repeat lg:bg-cover">
+    <div
+      class="w-full h-full flex flex-col md:flex-row justify-center items-center lg:w-auto lg:h-auto lg:p-0 lg:bg-[#FBFFB7] lg:backdrop-blur-lg lg:shadow-md lg:bg-opacity-70 lg:overflow-hidden lg:rounded-xl text-moss-green md:items-center">
+      <div
+        class="w-4/5 md:w-auto h-auto text-center md:p-12 md:flex md:flex-col md:justify-between lg:p-12 mt-12  md:h-[400px]">
         <h1 class="text-4xl font-bold mt-8 md:text-5xl">CONTACT US</h1>
         <div class="text-center mt-10">
           <h2 class="text-lg font-bold md:text-2xl">Booking Request</h2>
@@ -315,10 +356,10 @@
         <p class="font-bold mt-4 mb-4 md:text-lg">Open: 12.00 am - 10.00pm</p>
       </div>
 
-      <div class="mt-8">
+      <div class="mt-8 lg:m-0">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1320995614897!2d88.3696874!3d22.760478400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89a53d614f491%3A0x99eba74dc399fd57!2sDada%20Boudi%20Restaurant!5e0!3m2!1sen!2sin!4v1701871863504!5m2!1sen!2sin"
-          width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+          class="w-[360px] h-[400px] lg:h-[500px] lg:w-[500px]" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
